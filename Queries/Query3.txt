@@ -1,0 +1,113 @@
+Find all the company drives and students who appeared for the placement
+
+Query:
+db.company_drives.aggregate([
+  {
+    $lookup: {
+      from: "users",
+      localField: "attended_students",
+      foreignField: "_id",
+      as: "students"
+    }
+  },
+  {
+    $project: {
+      company_name: 1,
+      drive_date: 1,
+      "students.name": 1,
+      "students.email": 1
+    }
+  }
+])
+
+output:
+{
+  _id: ObjectId('6971a764050d9ac15a124885'),
+  company_name: 'Google',
+  drive_date: 2020-10-16T00:00:00.000Z,
+  students: [
+    {
+      name: 'abinaya',
+      email: 'abi@gmail.com'
+    },
+    {
+      name: 'shiva',
+      email: 'shiva@gmail.com'
+    }
+  ]
+}
+{
+  _id: ObjectId('6971a764050d9ac15a124886'),
+  company_name: 'HCL',
+  drive_date: 2020-10-18T00:00:00.000Z,
+  students: [
+    {
+      name: 'priya',
+      email: 'priya@gmail.com'
+    },
+    {
+      name: 'durga',
+      email: 'durga@gmail.com'
+    }
+  ]
+}
+{
+  _id: ObjectId('6971a764050d9ac15a124887'),
+  company_name: 'Accenture',
+  drive_date: 2020-10-20T00:00:00.000Z,
+  students: [
+    {
+      name: 'meena',
+      email: 'meena@gmail.com'
+    },
+    {
+      name: 'rajiv',
+      email: 'rajiv@gmail.com'
+    }
+  ]
+}
+{
+  _id: ObjectId('6971a764050d9ac15a124888'),
+  company_name: 'TCS',
+  drive_date: 2020-10-24T00:00:00.000Z,
+  students: [
+    {
+      name: 'Arthi',
+      email: 'arthi@gmail.com'
+    },
+    {
+      name: 'nithya',
+      email: 'nithya@gmail.com'
+    }
+  ]
+}
+{
+  _id: ObjectId('6971a764050d9ac15a124889'),
+  company_name: 'Infosys',
+  drive_date: 2020-10-25T00:00:00.000Z,
+  students: [
+    {
+      name: 'riha',
+      email: 'riha@gmail.com'
+    },
+    {
+      name: 'deva',
+      email: 'deva@gmail.com'
+    }
+  ]
+}
+{
+  _id: ObjectId('6971a764050d9ac15a12488a'),
+  company_name: 'Cognizant',
+  drive_date: 2020-10-28T00:00:00.000Z,
+  students: [
+    {
+      name: 'ganga',
+      email: 'ganga@gmail.com'
+    },
+    {
+      name: 'rini',
+      email: 'rini@gmail.com'
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+Find the number of problems solved by each user in CodeKata.
+
+Query:
+db.codekata.aggregate([
+  {
+    $lookup: {
+      from: "users",
+      localField: "user_id",
+      foreignField: "_id",
+      as: "user"
+    }
+  },
+  { $unwind: "$user" },
+  {
+    $project: {
+      _id: 0,
+      user_name: "$user.name",
+      problems_solved: 1
+    }
+  }
+])
+
+output:
+{
+  problems_solved: 120,
+  user_name: 'abinaya'
+}
+{
+  problems_solved: 95,
+  user_name: 'arivu'
+}
+{
+  problems_solved: 110,
+  user_name: 'priya'
+}
+{
+  problems_solved: 80,
+  user_name: 'rajiv'
+}
+{
+  problems_solved: 105,
+  user_name: 'shiva'
+}
+{
+  problems_solved: 130,
+  user_name: 'ganga'
+}
+{
+  problems_solved: 140,
+  user_name: 'gowri'
+}
+{
+  problems_solved: 70,
+  user_name: 'nithya'
+}

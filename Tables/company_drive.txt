@@ -1,0 +1,64 @@
+
+db.company_drives.insertMany([
+ {
+   company_name: "Google",
+   drive_date: ISODate("2020-10-16"),
+   attended_students: [
+     ObjectId("6970e5f32e0805f3ff4bc9b8"),
+     ObjectId("6970e5f32e0805f3ff4bc9bc")
+  ]
+ },
+ {
+   company_name: "HCL",
+   drive_date: ISODate("2020-10-18"),
+   attended_students: [
+     ObjectId("6970e5f32e0805f3ff4bc9ba"),
+     ObjectId("6970e5f32e0805f3ff4bc9c6")
+   ]
+ },
+ {
+   company_name: "Accenture",
+   drive_date: ISODate("2020-10-20"),
+   attended_students: [
+     ObjectId("6970e5f32e0805f3ff4bc9c3"),
+     ObjectId("6970e5f32e0805f3ff4bc9bb")
+   ]
+ },
+ {
+   company_name: "TCS",
+   drive_date: ISODate("2020-10-24"),
+   attended_students: [
+     ObjectId("6970e5f32e0805f3ff4bc9bf"),
+     ObjectId("6970e5f32e0805f3ff4bc9c1")
+   ]
+ },
+ {
+   company_name: "Infosys",
+   drive_date: ISODate("2020-10-25"),
+   attended_students: [
+     ObjectId("6970e5f32e0805f3ff4bc9c2")
+     ObjectId("6970e5f32e0805f3ff4bc9c9")
+   ]
+ },
+ {
+   company_name: "Cognizant",
+   drive_date: ISODate("2020-10-28"),
+   attended_students: [
+     ObjectId("6970e5f32e0805f3ff4bc9bd")
+     ObjectId("6970e5f32e0805f3ff4bc9cb")
+   ]
+ }
+])
+
+
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6971a764050d9ac15a124885'),
+    '1': ObjectId('6971a764050d9ac15a124886'),
+    '2': ObjectId('6971a764050d9ac15a124887'),
+    '3': ObjectId('6971a764050d9ac15a124888'),
+    '4': ObjectId('6971a764050d9ac15a124889'),
+    '5': ObjectId('6971a764050d9ac15a12488a')
+  }
+}

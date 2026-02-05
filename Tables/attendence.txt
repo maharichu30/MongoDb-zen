@@ -1,0 +1,49 @@
+//create and insert value in attendance collection
+db.attendance.insertMany([
+ { user_id:ObjectId("6970e5f32e0805f3ff4bc9b8"), date:ISODate("2020-10-15"), status:"present" },
+ { user_id:ObjectId("6970e5f32e0805f3ff4bc9b9"), date:ISODate("2020-10-15"), status:"present" },
+ { user_id:ObjectId("6970e5f32e0805f3ff4bc9ba"), date:ISODate("2020-10-15"), status:"absent" },
+ { user_id:ObjectId("6970e5f32e0805f3ff4bc9bb"), date:ISODate("2020-10-15"), status:"present" },
+ { user_id:ObjectId("6970e5f32e0805f3ff4bc9bc"), date:ISODate("2020-10-15"), status:"present" },
+ { user_id:ObjectId("6970e5f32e0805f3ff4bc9bd"), date:ISODate("2020-10-15"), status:"absent" },
+ { user_id:ObjectId("6970e5f32e0805f3ff4bc9be"), date:ISODate("2020-10-15"), status:"present" },
+ { user_id:ObjectId("6970e5f32e0805f3ff4bc9bf"), date:ISODate("2020-10-15"), status:"present" },
+ { user_id:ObjectId("6970e5f32e0805f3ff4bc9c0"), date:ISODate("2020-10-15"), status:"present" },
+ { user_id:ObjectId("6970e5f32e0805f3ff4bc9c1"), date:ISODate("2020-10-15"), status:"absent" },
+ { user_id:ObjectId("6970e5f32e0805f3ff4bc9c2"), date:ISODate("2020-10-15"), status:"present" },
+ { user_id:ObjectId("6970e5f32e0805f3ff4bc9c3"), date:ISODate("2020-10-15"), status:"present" },
+ { user_id:ObjectId("6970e5f32e0805f3ff4bc9c4"), date:ISODate("2020-10-15"), status:"absent" },
+ { user_id:ObjectId("6970e5f32e0805f3ff4bc9c5"), date:ISODate("2020-10-15"), status:"present" },
+ { user_id:ObjectId("6970e5f32e0805f3ff4bc9c6"), date:ISODate("2020-10-15"), status:"present" },
+ { user_id:ObjectId("6970e5f32e0805f3ff4bc9c7"), date:ISODate("2020-10-15"), status:"present" },
+ { user_id:ObjectId("6970e5f32e0805f3ff4bc9c8"), date:ISODate("2020-10-15"), status:"absent" },
+ { user_id:ObjectId("6970e5f32e0805f3ff4bc9c9"), date:ISODate("2020-10-15"), status:"present" },
+ { user_id:ObjectId("6970e5f32e0805f3ff4bc9ca"), date:ISODate("2020-10-15"), status:"present" },
+ { user_id:ObjectId("6970e5f32e0805f3ff4bc9cb"), date:ISODate("2020-10-15"), status:"present" }
+])
+
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6971074d2e0805f3ff4bc9cc'),
+    '1': ObjectId('6971074d2e0805f3ff4bc9cd'),
+    '2': ObjectId('6971074d2e0805f3ff4bc9ce'),
+    '3': ObjectId('6971074d2e0805f3ff4bc9cf'),
+    '4': ObjectId('6971074d2e0805f3ff4bc9d0'),
+    '5': ObjectId('6971074d2e0805f3ff4bc9d1'),
+    '6': ObjectId('6971074d2e0805f3ff4bc9d2'),
+    '7': ObjectId('6971074d2e0805f3ff4bc9d3'),
+    '8': ObjectId('6971074d2e0805f3ff4bc9d4'),
+    '9': ObjectId('6971074d2e0805f3ff4bc9d5'),
+    '10': ObjectId('6971074d2e0805f3ff4bc9d6'),
+    '11': ObjectId('6971074d2e0805f3ff4bc9d7'),
+    '12': ObjectId('6971074d2e0805f3ff4bc9d8'),
+    '13': ObjectId('6971074d2e0805f3ff4bc9d9'),
+    '14': ObjectId('6971074d2e0805f3ff4bc9da'),
+    '15': ObjectId('6971074d2e0805f3ff4bc9db'),
+    '16': ObjectId('6971074d2e0805f3ff4bc9dc'),
+    '17': ObjectId('6971074d2e0805f3ff4bc9dd'),
+    '18': ObjectId('6971074d2e0805f3ff4bc9de'),
+    '19': ObjectId('6971074d2e0805f3ff4bc9df')
+  }
+}

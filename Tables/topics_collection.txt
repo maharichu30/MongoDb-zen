@@ -1,0 +1,54 @@
+//create and insert value in topics collection
+
+db.topics.insertMany([
+ { topic_name:"HTML Basics",        date:ISODate("2020-10-15"), mentor_id:ObjectId("6970e0e62e0805f3ff4bc9b5") },
+ { topic_name:"CSS Basics",         date:ISODate("2020-10-16"), mentor_id:ObjectId("6970e0e62e0805f3ff4bc9b5") },
+ { topic_name:"CSS Flexbox",        date:ISODate("2020-10-17"), mentor_id:ObjectId("6970e0e62e0805f3ff4bc9b5") },
+ { topic_name:"JavaScript Basics",  date:ISODate("2020-10-18"), mentor_id:ObjectId("6970e0e62e0805f3ff4bc9b5") },
+ { topic_name:"JS Functions",       date:ISODate("2020-10-19"), mentor_id:ObjectId("6970e0e62e0805f3ff4bc9b6") },
+ { topic_name:"DOM Manipulation",   date:ISODate("2020-10-20"), mentor_id:ObjectId("6970e0e62e0805f3ff4bc9b5") },
+ { topic_name:"Async JS",           date:ISODate("2020-10-21"), mentor_id:ObjectId("6970e0e62e0805f3ff4bc9b5") },
+ { topic_name:"React js",           date:ISODate("2020-10-22"), mentor_id:ObjectId("6970e0e62e0805f3ff4bc9b5") },
+ { topic_name:"React Components",   date:ISODate("2020-10-23"), mentor_id:ObjectId("6970e0e62e0805f3ff4bc9b5") },
+ { topic_name:"React Hooks",        date:ISODate("2020-10-24"), mentor_id:ObjectId("6970e0e62e0805f3ff4bc9b7") },
+ { topic_name:"Node.js Intro",      date:ISODate("2020-10-25"), mentor_id:ObjectId("6970e0e62e0805f3ff4bc9b6") },
+ { topic_name:"Express.js",         date:ISODate("2020-10-26"), mentor_id:ObjectId("6970e0e62e0805f3ff4bc9b5") },
+ { topic_name:"MongoDB Basics",     date:ISODate("2020-10-27"), mentor_id:ObjectId("6970e0e62e0805f3ff4bc9b7") },
+ { topic_name:"MongoDB Aggregation",date:ISODate("2020-10-28"), mentor_id:ObjectId("6970e0e62e0805f3ff4bc9b5") },
+ { topic_name:"JWT Authentication", date:ISODate("2020-10-29"), mentor_id:ObjectId("6970e0e62e0805f3ff4bc9b6") },
+ { topic_name:"Project Discussion", date:ISODate("2020-10-30"), mentor_id:ObjectId("6970e0e62e0805f3ff4bc9b5") },
+ { topic_name:"Mock Interview",     date:ISODate("2020-10-31"), mentor_id:ObjectId("6970e0e62e0805f3ff4bc9b5") },
+ { topic_name:"Advanced CSS",       date:ISODate("2020-11-02"), mentor_id:ObjectId("6970e0e62e0805f3ff4bc9b5") },
+ { topic_name:"TypeScript Intro",   date:ISODate("2020-11-03"), mentor_id:ObjectId("6970e0e62e0805f3ff4bc9b5") },
+ { topic_name:"Redux Basics",       date:ISODate("2020-11-04"), mentor_id:ObjectId("6970e0e62e0805f3ff4bc9b5") },
+ { topic_name:"Node Security",      date:ISODate("2020-11-05"), mentor_id:ObjectId("6970e0e62e0805f3ff4bc9b5") },
+ { topic_name:"Project Review",     date:ISODate("2020-11-06"), mentor_id:ObjectId("6970e0e62e0805f3ff4bc9b5") }
+])
+
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('69710c3a2e0805f3ff4bc9e0'),
+    '1': ObjectId('69710c3a2e0805f3ff4bc9e1'),
+    '2': ObjectId('69710c3a2e0805f3ff4bc9e2'),
+    '3': ObjectId('69710c3a2e0805f3ff4bc9e3'),
+    '4': ObjectId('69710c3a2e0805f3ff4bc9e4'),
+    '5': ObjectId('69710c3a2e0805f3ff4bc9e5'),
+    '6': ObjectId('69710c3a2e0805f3ff4bc9e6'),
+    '7': ObjectId('69710c3a2e0805f3ff4bc9e7'),
+    '8': ObjectId('69710c3a2e0805f3ff4bc9e8'),
+    '9': ObjectId('69710c3a2e0805f3ff4bc9e9'),
+    '10': ObjectId('69710c3a2e0805f3ff4bc9ea'),
+    '11': ObjectId('69710c3a2e0805f3ff4bc9eb'),
+    '12': ObjectId('69710c3a2e0805f3ff4bc9ec'),
+    '13': ObjectId('69710c3a2e0805f3ff4bc9ed'),
+    '14': ObjectId('69710c3a2e0805f3ff4bc9ee'),
+    '15': ObjectId('69710c3a2e0805f3ff4bc9ef'),
+    '16': ObjectId('69710c3a2e0805f3ff4bc9f0'),
+    '17': ObjectId('69710c3a2e0805f3ff4bc9f1'),
+    '18': ObjectId('69710c3a2e0805f3ff4bc9f2'),
+    '19': ObjectId('69710c3a2e0805f3ff4bc9f3'),
+    '20': ObjectId('69710c3a2e0805f3ff4bc9f4'),
+    '21': ObjectId('69710c3a2e0805f3ff4bc9f5')
+  }
+}

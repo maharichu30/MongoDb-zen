@@ -1,0 +1,58 @@
+
+//HTML Task
+db.tasks.insertOne({
+  topic_id: ObjectId("69710c3a2e0805f3ff4bc9e0"),
+  task_name: "HTML Task",
+  due_date: ISODate("2020-10-17"),
+  submissions: [
+    { user_id: ObjectId("6970e5f32e0805f3ff4bc9b8"), submitted: true },
+    { user_id: ObjectId("6970e5f32e0805f3ff4bc9b9"), submitted: true },
+    { user_id: ObjectId("6970e5f32e0805f3ff4bc9ba"), submitted: false },
+    { user_id: ObjectId("6970e5f32e0805f3ff4bc9bb"), submitted: true },
+    { user_id: ObjectId("6970e5f32e0805f3ff4bc9bc"), submitted: true }
+  ]
+})
+
+{
+  acknowledged: true,
+  insertedId: ObjectId('697110b12e0805f3ff4bc9f6')
+}
+
+//css task
+db.tasks.insertOne({
+  topic_id: ObjectId("69710c3a2e0805f3ff4bc9e1"),
+  task_name: "CSS Task",
+  due_date: ISODate("2020-10-18"),
+  submissions: [
+    { user_id: ObjectId("6970e5f32e0805f3ff4bc9c1"), submitted: true },
+    { user_id: ObjectId("6970e5f32e0805f3ff4bc9c2"), submitted: false },
+    { user_id: ObjectId("6970e5f32e0805f3ff4bc9c3"), submitted: false },
+    { user_id: ObjectId("6970e5f32e0805f3ff4bc9c4"), submitted: true },
+    { user_id: ObjectId("6970e5f32e0805f3ff4bc9c5"), submitted: true }
+  ]
+})
+
+{
+  acknowledged: true,
+  insertedId: ObjectId('697113092e0805f3ff4bc9f9')
+}
+
+//Reactjs task
+db.tasks.insertOne({
+  topic_id: ObjectId("69710c3a2e0805f3ff4bc9e7"),
+  task_name: "Reactjs Task",
+  due_date: ISODate("2020-10-24"),
+  submissions: [
+    { user_id: ObjectId("6970e5f32e0805f3ff4bc9c6"), submitted: true },
+    { user_id: ObjectId("6970e5f32e0805f3ff4bc9c7"), submitted: false },
+    { user_id: ObjectId("6970e5f32e0805f3ff4bc9c8"), submitted: false },
+    { user_id: ObjectId("6970e5f32e0805f3ff4bc9c9"), submitted: true },
+    { user_id: ObjectId("6970e5f32e0805f3ff4bc9ca"), submitted: true }
+  ]
+})
+
+{
+  acknowledged: true,
+  insertedId: ObjectId('697112c62e0805f3ff4bc9f8')
+}
+

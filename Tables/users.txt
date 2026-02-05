@@ -1,0 +1,47 @@
+//create and insert value in users collection
+>db.users.insertMany([{name:"abinaya",email:"abi@gmail.com",   mentor_id:ObjectId('6970e0e62e0805f3ff4bc9b5'),codekata_score:400},
+                      {name:"arivu",  email:"arivu@gmail.com", mentor_id:ObjectId('6970e0e62e0805f3ff4bc9b6'),codekata_score:370},
+                      {name:"priya",  email:"priya@gmail.com", mentor_id:ObjectId('6970e0e62e0805f3ff4bc9b5'),codekata_score:390},
+                      {name:"rajiv",  email:"rajiv@gmail.com", mentor_id:ObjectId('6970e0e62e0805f3ff4bc9b5'),codekata_score:325},
+                      {name:"shiva",  email:"shiva@gmail.com", mentor_id:ObjectId('6970e0e62e0805f3ff4bc9b7'),codekata_score:397},
+                      {name:"ganga",  email:"ganga@gmail.com", mentor_id:ObjectId('6970e0e62e0805f3ff4bc9b5'),codekata_score:401},
+                      {name:"gowri",  email:"gowri@gmail.com", mentor_id:ObjectId('6970e0e62e0805f3ff4bc9b5'),codekata_score:402},
+                      {name:"nithya", email:"nithya@gmail.com",mentor_id:ObjectId('6970e0e62e0805f3ff4bc9b5'),codekata_score:300},
+                      {name:"Divya",  email:"divya@gmail.com", mentor_id:ObjectId('6970e0e62e0805f3ff4bc9b5'),codekata_score:445},
+                      {name:"Arthi",  email:"arthi@gmail.com", mentor_id:ObjectId('6970e0e62e0805f3ff4bc9b5'),codekata_score:456},
+                      {name:"deva",   email:"deva@gmail.com",  mentor_id:ObjectId('6970e0e62e0805f3ff4bc9b6'),codekata_score:487},
+                      {name:"meena",  email:"meena@gmail.com", mentor_id:ObjectId('6970e0e62e0805f3ff4bc9b5'),codekata_score:480},
+                      {name:"madhu",  email:"madhu@gmail.com", mentor_id:ObjectId('6970e0e62e0805f3ff4bc9b5'),codekata_score:434},
+                      {name:"kavi",   email:"kavi@gmail.com",  mentor_id:ObjectId('6970e0e62e0805f3ff4bc9b5'),codekata_score:408},
+                      {name:"durga",  email:"durga@gmail.com", mentor_id:ObjectId('6970e0e62e0805f3ff4bc9b5'),codekata_score:490},
+                      {name:"devi",   email:"devi@gmail.com",  mentor_id:ObjectId('6970e0e62e0805f3ff4bc9b5'),codekata_score:421},
+                      {name:"richu",  email:"richu@gmail.com", mentor_id:ObjectId('6970e0e62e0805f3ff4bc9b5'),codekata_score:460},
+                      {name:"riha",   email:"riha@gmail.com",  mentor_id:ObjectId('6970e0e62e0805f3ff4bc9b5'),codekata_score:468},
+                      {name:"mary",   email:"mary@gmail.com",  mentor_id:ObjectId('6970e0e62e0805f3ff4bc9b7'),codekata_score:487},
+                      {name:"rini",   email:"rini@gmail.com",  mentor_id:ObjectId('6970e0e62e0805f3ff4bc9b5'),codekata_score:451}])
+
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6970e5f32e0805f3ff4bc9b8'),
+    '1': ObjectId('6970e5f32e0805f3ff4bc9b9'),
+    '2': ObjectId('6970e5f32e0805f3ff4bc9ba'),
+    '3': ObjectId('6970e5f32e0805f3ff4bc9bb'),
+    '4': ObjectId('6970e5f32e0805f3ff4bc9bc'),
+    '5': ObjectId('6970e5f32e0805f3ff4bc9bd'),
+    '6': ObjectId('6970e5f32e0805f3ff4bc9be'),
+    '7': ObjectId('6970e5f32e0805f3ff4bc9bf'),
+    '8': ObjectId('6970e5f32e0805f3ff4bc9c0'),
+    '9': ObjectId('6970e5f32e0805f3ff4bc9c1'),
+    '10': ObjectId('6970e5f32e0805f3ff4bc9c2'),
+    '11': ObjectId('6970e5f32e0805f3ff4bc9c3'),
+    '12': ObjectId('6970e5f32e0805f3ff4bc9c4'),
+    '13': ObjectId('6970e5f32e0805f3ff4bc9c5'),
+    '14': ObjectId('6970e5f32e0805f3ff4bc9c6'),
+    '15': ObjectId('6970e5f32e0805f3ff4bc9c7'),
+    '16': ObjectId('6970e5f32e0805f3ff4bc9c8'),
+    '17': ObjectId('6970e5f32e0805f3ff4bc9c9'),
+    '18': ObjectId('6970e5f32e0805f3ff4bc9ca'),
+    '19': ObjectId('6970e5f32e0805f3ff4bc9cb')
+  }
+}

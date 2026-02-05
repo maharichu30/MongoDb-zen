@@ -1,0 +1,15 @@
+>use Zen_class
+
+//create and insert value in mentors collection
+>db.mentors.insertMany([{name:"rupan",email:"rupan@gmail.com"},
+                        {name:"john",email:"john@gmail.com"},
+                        {name:"raja",email:"raja@gmail.com"}])
+
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6970e0e62e0805f3ff4bc9b5'),
+    '1': ObjectId('6970e0e62e0805f3ff4bc9b6'),
+    '2': ObjectId('6970e0e62e0805f3ff4bc9b7')
+  }
+}

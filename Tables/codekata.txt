@@ -1,0 +1,48 @@
+db.codekata.insertMany([
+ {
+   user_id: ObjectId("6970e5f32e0805f3ff4bc9b8"), 
+   problems_solved: 120
+ },
+ {
+   user_id: ObjectId("6970e5f32e0805f3ff4bc9b9"), 
+   problems_solved: 95
+ },
+ {
+   user_id: ObjectId("6970e5f32e0805f3ff4bc9ba"), 
+   problems_solved: 110
+ },
+ {
+   user_id: ObjectId("6970e5f32e0805f3ff4bc9bb"), 
+   problems_solved: 80
+ },
+ {
+   user_id: ObjectId("6970e5f32e0805f3ff4bc9bc"), 
+   problems_solved: 105
+ },
+ {
+   user_id: ObjectId("6970e5f32e0805f3ff4bc9bd"), 
+   problems_solved: 130
+ },
+ {
+   user_id: ObjectId("6970e5f32e0805f3ff4bc9be"),
+   problems_solved: 140
+ },
+ {
+   user_id: ObjectId("6970e5f32e0805f3ff4bc9bf"), 
+   problems_solved: 70
+ }
+])
+
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('697117802e0805f3ff4bca00'),
+    '1': ObjectId('697117802e0805f3ff4bca01'),
+    '2': ObjectId('697117802e0805f3ff4bca02'),
+    '3': ObjectId('697117802e0805f3ff4bca03'),
+    '4': ObjectId('697117802e0805f3ff4bca04'),
+    '5': ObjectId('697117802e0805f3ff4bca05'),
+    '6': ObjectId('697117802e0805f3ff4bca06'),
+    '7': ObjectId('697117802e0805f3ff4bca07')
+  }
+}

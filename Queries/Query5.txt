@@ -1,0 +1,41 @@
+Find all mentors who have more than 15 mentees.
+
+Query:
+
+db.users.aggregate([
+  {
+    $group: {
+      _id: "$mentor_id",
+      mentee_count: { $sum: 1 }
+    }
+  },
+  {
+    $match: {
+      mentee_count: { $gt: 15 }
+    }
+  },
+  {
+    $lookup: {
+      from: "mentors",
+      localField: "_id",
+      foreignField: "_id",
+      as: "mentor"
+    }
+  },
+  { $unwind: "$mentor" },
+  {
+    $project: {
+      _id: 0,
+      mentor_name: "$mentor.name",
+      mentee_count: 1
+    }
+  }
+])
+
+output:
+{
+  mentee_count: 16,
+  mentor_name: 'rupan'
+}
+
+
